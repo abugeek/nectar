@@ -80,7 +80,7 @@ class _SignInPageState extends State<SignInPage> {
                   keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.done,
                   decoration: const InputDecoration(
-                    hintText: '(99) 123-45-67',
+                    hintText: '(--) --- -- --',
                     hintStyle: TextStyle(
                       color: Colors.black,
                     ),

@@ -28,7 +28,10 @@ class _VerificationPageState extends State<VerificationPage> {
               child: const Text('Resend Code'),
             ),
             FloatingActionButton(
-              onPressed: (() {}),
+              onPressed: (() {
+                context.go('/Home');
+              
+              }),
               child: const Icon(Icons.arrow_forward_ios),
             ),
           ],
