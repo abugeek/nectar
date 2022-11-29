@@ -33,11 +33,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         child: BottomNavigationBar(
           elevation: 0,
           currentIndex: _currentNavIndex,
-          onTap: (int index) {
-            setState(() {
-              _currentNavIndex = index;
-            });
-          },
+          onTap: _onItemTapped,
           type: BottomNavigationBarType.fixed,
           items: const [
             BottomNavigationBarItem(
@@ -68,6 +64,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
           ],
         ),
       ),
+      
     );
+    
   }
+  void _onItemTapped(int index) {
+      setState(() {
+        _currentNavIndex = index;
+      });
+    }
 }
